@@ -173,7 +173,7 @@ function Home() {
               <div>
                 {" "}
                 <img
-                  src="https://cdn.shopify.com/s/files/1/0002/4595/6671/products/TurtleBundle_Case_Schutzglas_AirPods_7_AP1_2_700x.jpg?v=1646320978"
+                  src="https://blog.loncam.com/upload/newsContent/electronicwide.jpg"
                   height="100"
                   width="100"
                 />{" "}
