@@ -36,7 +36,7 @@ export class Login extends Component {
       this.props.loginSuccess();
     } else {
       this.props.loginError({
-        payload: "Please enter a correct id and password.",
+        payload: "Yanlış şifre veya kullanıcı adı.",
       });
     }
   };
@@ -53,9 +53,9 @@ export class Login extends Component {
               >
                 <div className="card-body p-5 text-center">
                   <div className="mb-md-5 mt-md-4 pb-5">
-                    <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
+                    <h2 className="fw-bold mb-2 text-uppercase">Admin Giriş</h2>
                     <p className="text-white-50 mb-5">
-                      Please enter your login and password!
+                      Kullanıcı Adı ve Şifreyi Girin
                     </p>
 
                     <div className="form-outline form-white mb-4">
@@ -65,7 +65,7 @@ export class Login extends Component {
                         className="form-control form-control-lg"
                         onChange={this.onUserNameChange}
                         onKeyPress={this.onEnter}
-                        placeholder="ID"
+                        placeholder="Kullanıcı Adı"
                       />
                     </div>
 
@@ -76,13 +76,13 @@ export class Login extends Component {
                         className="form-control form-control-lg"
                         onChange={this.onPasswordChange}
                         onKeyPress={this.onEnter}
-                        placeholder="Password"
+                        placeholder="Şifre"
                       />
                     </div>
 
                     <p className="small mb-5 pb-lg-2">
                       <a className="text-white-50" href="#!">
-                        Forgot password?
+                        Şifreni mi unuttun?
                       </a>
                     </p>
 
@@ -91,7 +91,7 @@ export class Login extends Component {
                       type="submit"
                       onClick={this.onSubmit}
                     >
-                      Login
+                      Giriş
                     </button>
 
                     {this.props.admin.status === "false" && (
@@ -99,7 +99,7 @@ export class Login extends Component {
                         <p className="mt-5">
                           {this.props.admin.errorMessage.payload}
                         </p>
-                        <p>{"ID: admin Password: admin"}</p>
+                        <p>{"Kullanıcı adı: admin Şifre: admin"}</p>
                       </>
                     )}
                   </div>
